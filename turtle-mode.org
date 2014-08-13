@@ -10,3 +10,6 @@
     (define-derived-mode turtle-mode ntriple-mode "Turtle"
       "Major mode for editing RDF files serialized in Turtle (Terse RDF Triple Language (W3C recommendation REC-turtle-20140225) notation.")
   #+END_SRC
+
+* Simple triples
+  Simple triples are the same as in N-Triple mode and are treated the same.
