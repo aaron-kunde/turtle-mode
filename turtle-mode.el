@@ -29,3 +29,9 @@
 ;; For more information how I wrote this mode, please see the documentation in
 ;; <https://github.com/aaron-kunde/turtle-mode/turtle-mode.org>
 
+;;; Code:
+
+(require 'ntriple-mode)
+
+(define-derived-mode turtle-mode ntriple-mode "Turtle"
+  "Major mode for editing RDF files serialized in Turtle (Terse RDF Triple Language (W3C recommendation REC-turtle-20140225) notation.")

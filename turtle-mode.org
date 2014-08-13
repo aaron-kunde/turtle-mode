@@ -1,2 +1,12 @@
 * Introduction
   We define the this mode according to the [[http://www.w3.org/TR/2014/REC-turtle-20140225/][W3C recommendation]].
+
+* Define mode
+  We defint the mode, by deriving from the [[https://github.com/aaron-kunde/ntriple-mode][N-Triple mode]] adding the following
+  lines:
+  #+BEGIN_SRC emacs-lisp
+    (require 'ntriple-mode)
+
+    (define-derived-mode turtle-mode ntriple-mode "Turtle"
+      "Major mode for editing RDF files serialized in Turtle (Terse RDF Triple Language (W3C recommendation REC-turtle-20140225) notation.")
+  #+END_SRC
